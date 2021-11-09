@@ -1,0 +1,26 @@
+{% extends 'index.html'%}
+{% block container %}
+<!-- Dropdown Structure -->
+<table >
+  <thead>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Last name</th>
+        <th>Rol</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    {% for rol_user in roles_user %}
+      <tr>
+        <th>{{ rol_user.pk | title }}</th>
+        <th>{{ rol_user.user.first_name | title }}</th>
+        <th>{{ rol_user.user.last_name | title}}</th>
+        <th>{{ rol_user.rol | title }}</th>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+{% endblock container %}

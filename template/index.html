@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <!-- Compiled and minified CSS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    
+    {% if request.user.is_authenticated %}
+        {% include 'nav.html' %} <!-- ingresa  de manera forzada el cod que siempre va ha estar -->
+    {% endif %}
+    <!--{%for user in custom_user %}
+    {{ custom_user.user.username}}
+    {% endfor %}
+    {{hi}} -->
+
+    {% block container %} <!--etiqueta que me permite extender-->
+    {% endblock container %}
+   
+    
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="{% static 'js/index.js' %}"></script>
+</body>
+</html>

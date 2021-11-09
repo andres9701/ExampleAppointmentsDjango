@@ -1,0 +1,74 @@
+body {
+    background-image: url("https://us.123rf.com/450wm/lightfieldstudios/lightfieldstudios1801/lightfieldstudios180101598/93599993-recipiente-p%C3%ADlulas-dispersas-e-estetosc%C3%B3pio.jpg?ver=6");
+}
+.bodyLogin {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 45%, rgba(0,212,255,1) 100%);
+    width: 100vh;
+    height: 100vh;
+}
+.loginDiv{
+    top: 20vh;
+    position: relative;
+    background-color: white;
+    width: 100vh;
+    border-radius: 40px;
+    height: auto;
+}
+.loginContainer{
+    padding: 30px;
+}
+.loginTitle{
+    width: 100%;
+    text-align: center;
+
+}
+.loginTitle h5{
+   font-weight: bold;
+}
+
+.customInput {
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+    background-color: #eeeeee;
+    border-radius: 100px;
+    padding: 14px!important;
+    
+}
+
+.customInput input {
+    position: relative;
+    padding-left: 30px;
+    border-style: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.customInput i {
+    position: absolute;
+    color: darkgray;
+    z-index: 999;
+    transition: all 2s ease 0s;
+
+}
+
+.customInput:hover i {
+    color: rgb(0, 153, 255)!important;
+    transition: all 2s ease 0s;
+
+}
+
+.btnlogin {
+    border-radius: 100px;
+}
+.divRecup {
+    text-align: center;
+}
+.img_d{
+    height: 80px;
+     
+}
+.img_d img {
+    border-radius: 100px;
+}
